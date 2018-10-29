@@ -1,7 +1,8 @@
 Redis, RE-dis is an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability
 
-This article is something I learn when wanted to use redis without polluting the local machine with redis installation.
-The first thing came to my mind is to use ```Docker```. So lets begin 
+This article is all about how I learned to use redis without installing it locally.
+
+The first thing that came to my mind was to use ```Docker```. So lets begin 
 
 1. Get the official redis docker image
 Run the following command
@@ -22,8 +23,8 @@ you will see something like this as result of above command<br/>
 You can download a sample redis.conf file from [here](http://download.redis.io/redis-stable/redis.conf)
 
 4. Run the docker image 
-Before doing this lets create a local volume where the redis.conf is available and mount it in the docker image while 
-running it. e.g/ /home/<your-user-name>/redis/redis.conf
+Before doing this lets create a local folder where the redis.conf is available and mount it in the docker image while 
+running it. e.g /home/<your-user-name>/redis/redis.conf
 
 Run the below command to run the redis docker image as demon.
 ```
